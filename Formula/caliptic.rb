@@ -5,21 +5,21 @@
 class Caliptic < Formula
   desc "Caliptic CLI — local agent runtime and management tool for the Caliptic platform"
   homepage "https://github.com/caliptic-org/caliptic"
-  version "0.1.23"
+  version "0.1.24"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/caliptic-org/releases/releases/download/v0.1.23/caliptic-cli-0.1.23-darwin-amd64.tar.gz"
-      sha256 "c8e11b05d3b9d41ccb04a42d9715a169e42dac8b8c662ad112850e40a1e17801"
+      url "https://github.com/caliptic-org/releases/releases/download/v0.1.24/caliptic-cli-0.1.24-darwin-amd64.tar.gz"
+      sha256 "0b85153ebc8f5eddc7a3562387a7d6a33e04e554f5733ddcc3fcb60547800afd"
 
       define_method(:install) do
         bin.install "caliptic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/caliptic-org/releases/releases/download/v0.1.23/caliptic-cli-0.1.23-darwin-arm64.tar.gz"
-      sha256 "d7488594a9d07d594a787f235f1d9d6ea9918e675f2af9f8be910945adf7eafa"
+      url "https://github.com/caliptic-org/releases/releases/download/v0.1.24/caliptic-cli-0.1.24-darwin-arm64.tar.gz"
+      sha256 "369e6c8362233347972a0a31a6cdd3dd9d9f03c71a5143741259e64d448677c9"
 
       define_method(:install) do
         bin.install "caliptic"
@@ -29,15 +29,15 @@ class Caliptic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caliptic-org/releases/releases/download/v0.1.23/caliptic-cli-0.1.23-linux-amd64.tar.gz"
-      sha256 "69c2d13be76dc327dfb11a8d7efecfdda0790267080dfc39945360f6bcb75c4d"
+      url "https://github.com/caliptic-org/releases/releases/download/v0.1.24/caliptic-cli-0.1.24-linux-amd64.tar.gz"
+      sha256 "364d5fe3785c2c7b36d76b6278b9e6c3a5c93e112ecc8ea21cc74cb5bde22e59"
       define_method(:install) do
         bin.install "caliptic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/caliptic-org/releases/releases/download/v0.1.23/caliptic-cli-0.1.23-linux-arm64.tar.gz"
-      sha256 "210f46b526c2246454f2de929b8e92f13703d51a2b900c3cbcbe16f896055695"
+      url "https://github.com/caliptic-org/releases/releases/download/v0.1.24/caliptic-cli-0.1.24-linux-arm64.tar.gz"
+      sha256 "7779d4c2cff269d2ca6b24844dc802f8d9f83cf4e1454a6f53d22806a7150fd6"
       define_method(:install) do
         bin.install "caliptic"
       end
